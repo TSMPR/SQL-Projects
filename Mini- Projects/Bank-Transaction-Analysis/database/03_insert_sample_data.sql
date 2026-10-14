@@ -1,0 +1,73 @@
+USE bank_transaction_analysis;
+
+DELETE FROM transactions;
+DELETE FROM accounts;
+DELETE FROM customers;
+
+INSERT INTO customers VALUES
+(1,'Aarav','Sharma','Hyderabad','2022-03-14'),
+(2,'Priya','Reddy','Vijayawada','2021-11-02'),
+(3,'Rahul','Verma','Bengaluru','2023-01-19'),
+(4,'Ananya','Iyer','Chennai','2020-07-08'),
+(5,'Kiran','Kumar','Guntur','2022-09-25'),
+(6,'Meera','Nair','Kochi','2024-02-10'),
+(7,'Arjun','Patel','Pune','2021-05-16'),
+(8,'Sneha','Das','Kolkata','2023-06-30'),
+(9,'Vikram','Singh','Delhi','2019-12-12'),
+(10,'Divya','Rao','Visakhapatnam','2024-04-03'),
+(11,'Rohan','Gupta','Mumbai','2022-12-01'),
+(12,'Ishita','Mishra','Jaipur','2023-09-11');
+
+INSERT INTO accounts VALUES
+(1001,1,'Savings','2022-03-15','Active'),
+(1002,1,'Fixed Deposit','2023-01-10','Active'),
+(1003,2,'Savings','2021-11-05','Active'),
+(1004,3,'Current','2023-01-20','Active'),
+(1005,4,'Savings','2020-07-10','Active'),
+(1006,5,'Savings','2022-09-26','Active'),
+(1007,6,'Savings','2024-02-12','Active'),
+(1008,7,'Current','2021-05-18','Active'),
+(1009,8,'Savings','2023-07-01','Inactive'),
+(1010,9,'Savings','2019-12-14','Active'),
+(1011,10,'Savings','2024-04-04','Active'),
+(1012,11,'Current','2022-12-03','Active'),
+(1013,12,'Savings','2023-09-12','Active'),
+(1014,2,'Fixed Deposit','2023-04-21','Active'),
+(1015,5,'Current','2023-02-01','Closed');
+
+INSERT INTO transactions VALUES
+(5001,1001,'2025-01-03 09:15:00','DEPOSIT',12000,'Branch','Salary credit'),
+(5002,1001,'2025-01-05 14:22:00','WITHDRAWAL',2500,'ATM','Cash withdrawal'),
+(5003,1001,'2025-01-08 18:05:00','DEPOSIT',1800,'Mobile App','Refund'),
+(5004,1002,'2025-01-10 10:30:00','DEPOSIT',50000,'Branch','Fixed deposit funding'),
+(5005,1003,'2025-01-12 11:40:00','DEPOSIT',35000,'Online','Salary credit'),
+(5006,1003,'2025-01-14 16:10:00','WITHDRAWAL',4200,'POS','Shopping payment'),
+(5007,1004,'2025-01-15 12:35:00','DEPOSIT',22000,'Online','Business payment'),
+(5008,1004,'2025-01-17 08:50:00','TRANSFER_OUT',7000,'Mobile App','Transfer out'),
+(5009,1005,'2025-01-18 13:20:00','DEPOSIT',18000,'Branch','Monthly income'),
+(5010,1005,'2025-01-19 19:05:00','WITHDRAWAL',3000,'ATM','Cash withdrawal'),
+(5011,1006,'2025-01-20 09:00:00','DEPOSIT',15000,'Online','Salary credit'),
+(5012,1006,'2025-01-21 15:45:00','WITHDRAWAL',1250,'POS','Grocery purchase'),
+(5013,1007,'2025-01-22 17:30:00','DEPOSIT',8000,'Mobile App','Savings deposit'),
+(5014,1008,'2025-01-23 10:05:00','DEPOSIT',42000,'Branch','Business income'),
+(5015,1008,'2025-01-24 11:25:00','TRANSFER_OUT',9000,'Online','Supplier payment'),
+(5016,1009,'2025-01-25 16:00:00','DEPOSIT',6500,'Online','Account funding'),
+(5017,1010,'2025-01-26 12:45:00','DEPOSIT',27000,'Branch','Pension credit'),
+(5018,1010,'2025-01-27 14:30:00','WITHDRAWAL',5000,'ATM','Cash withdrawal'),
+(5019,1011,'2025-02-01 09:10:00','DEPOSIT',11000,'Mobile App','Salary credit'),
+(5020,1011,'2025-02-02 18:15:00','WITHDRAWAL',2200,'POS','Retail purchase'),
+(5021,1012,'2025-02-03 10:55:00','DEPOSIT',32000,'Online','Invoice payment'),
+(5022,1012,'2025-02-04 13:40:00','TRANSFER_OUT',6500,'Mobile App','Vendor transfer'),
+(5023,1013,'2025-02-05 15:25:00','DEPOSIT',9500,'Branch','Savings deposit'),
+(5024,1001,'2025-02-06 09:20:00','WITHDRAWAL',1800,'ATM','Cash withdrawal'),
+(5025,1003,'2025-02-07 11:15:00','DEPOSIT',4000,'Mobile App','Additional savings'),
+(5026,1005,'2025-02-08 16:35:00','TRANSFER_IN',3000,'Online','Transfer received'),
+(5027,1006,'2025-02-09 12:00:00','WITHDRAWAL',750,'POS','Cafe purchase'),
+(5028,1008,'2025-02-10 10:30:00','DEPOSIT',12500,'Branch','Business income'),
+(5029,1010,'2025-02-11 14:45:00','WITHDRAWAL',2500,'ATM','Cash withdrawal'),
+(5030,1014,'2025-02-12 09:05:00','DEPOSIT',25000,'Branch','Fixed deposit funding'),
+(5031,1012,'2025-02-13 17:20:00','WITHDRAWAL',1800,'POS','Office supplies'),
+(5032,1013,'2025-02-14 19:10:00','TRANSFER_IN',2200,'Mobile App','Transfer received'),
+(5033,1007,'2025-02-15 10:00:00','WITHDRAWAL',1200,'ATM','Cash withdrawal'),
+(5034,1004,'2025-02-16 12:15:00','DEPOSIT',6500,'Online','Customer payment'),
+(5035,1009,'2025-02-17 15:55:00','WITHDRAWAL',500,'POS','Small purchase');
