@@ -1,9 +1,5 @@
 USE bank_transaction_analysis;
 
-DELETE FROM transactions;
-DELETE FROM accounts;
-DELETE FROM customers;
-
 INSERT INTO customers VALUES
 (1,'Aarav','Sharma','Hyderabad','2022-03-14'),
 (2,'Priya','Reddy','Vijayawada','2021-11-02'),
