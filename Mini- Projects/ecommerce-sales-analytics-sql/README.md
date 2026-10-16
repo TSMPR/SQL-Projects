@@ -28,7 +28,11 @@ queries/
   03_customer_analysis.sql
   04_product_analysis.sql
   05_advanced_queries.sql
-results/screenshots/
+results/
+  Test-1.png
+  Test-2.png
+  Test-3.png
+  Test-4.png
 docs/project_overview.md
 README.md
 ```
