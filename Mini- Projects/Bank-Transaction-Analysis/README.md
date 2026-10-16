@@ -17,6 +17,11 @@ A beginner-friendly MySQL project using fictional banking data. It practices tab
 │   ├── 02_transaction_analysis.sql
 │   ├── 03_customer_account_analysis.sql
 │   └── 04_beginner_advanced_queries.sql
+├── Results/
+│   ├──test 1.png
+│   ├──test 2.png
+│   ├──test 3.png
+│   ├──test 4.png
 ├── docs/project_overview.md
 └── results/screenshots/.gitkeep
 ```
