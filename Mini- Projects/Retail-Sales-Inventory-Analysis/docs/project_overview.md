@@ -10,7 +10,7 @@ A fictional retailer wants to understand sales results and current stock levels.
 
 ## Analysis
 1. Sales KPIs: orders, units sold, revenue, average order value.
-2. Product/category performance: revenue, units, estimated gross profit.
+2. Product/category performance: revenue, estimated gross profit.
 3. Inventory: reorder flags, suggested replenishment, inventory cost value.
 4. Advanced SQL: CTEs, `LAG()`, `DENSE_RANK()`, and revenue contribution.
 
