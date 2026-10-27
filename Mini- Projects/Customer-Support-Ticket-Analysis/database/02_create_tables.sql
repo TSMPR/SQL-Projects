@@ -35,5 +35,6 @@ CREATE TABLE ticket_feedback (
   FOREIGN KEY (ticket_id) REFERENCES tickets(ticket_id),
   CHECK (satisfaction_score BETWEEN 1 AND 5)
 );
+
 CREATE INDEX idx_tickets_created_at ON tickets(created_at);
 CREATE INDEX idx_tickets_status_priority ON tickets(status, priority);
